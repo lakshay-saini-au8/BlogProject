@@ -143,12 +143,14 @@ a {
 
 /*-----------------Footer-------------------------*/
 footer.footer{
+    height: 100%;
     background: #191919;
     position: relative;
 }
 
 footer.footer .container{
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     margin: auto;
 }
@@ -162,15 +164,17 @@ footer.footer .container > div{
 
 footer.footer .container h2{
     color: #fff;
+    margin-bottom: 10px;
 }
 
 footer.footer .container p{
     color: #a0a0a0;
+    line-height: 23px
 }
 
 footer.footer .newsletter .form-element{
     background: #000;
-    display: inline-block;
+    display: flex;;
 }
 
 #down-subscribe {
@@ -183,13 +187,13 @@ footer.footer .newsletter .form-element input{
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--Josefin);
+    font-family: 'Lato';
     font-size: 1rem;
     width: 74%;
 }
 
 footer.footer .newsletter .form-element span{
-    background: var(--sky);
+    background: black;
     padding: .5rem .7rem;
     cursor: pointer;
 }
@@ -218,12 +222,23 @@ footer.footer .rights{
 .social-links {
     color: white;
     display: flex;
-    justify-content: space-between;
-    width: 35%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 75%;
     margin-top: 5%;
 }
-
-
+.social-links ion-icon {
+    margin: 10px;
+}
+ .container{
+        display:flex;
+    }
+    .foot {
+      flex-grow: 1; /* each flex-item grows and takes 1/3 of the parent's width */
+      text-align: center;
+      
+    }
+    
 /* ---------x------- Footer ----------x---------- */
 
 /*              Viewport less then or equal to 1130px            */
@@ -250,7 +265,7 @@ footer.footer .rights{
 
 /*              Viewport less then or equal to 750px            */
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 930px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
@@ -266,6 +281,26 @@ footer.footer .rights{
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
     }
+    
+    .list-post-latest-sub1{display: block;}
+    .list-post-latest-sub2{display: block;}
+    
+    .list-post-latest .list-post-latest-sub1 .list-post{
+        width:50%;
+    }
+    .list-post-latest .list-post-latest-sub2 .list-post
+    {
+        width:50%;
+    }
+    .about-us p{
+        text-align: left;
+        font-size: 90%;
+    }
+    .newsletter p{
+        font-size:90%;
+    }
+    
+    
 
 }
 
@@ -279,7 +314,14 @@ footer.footer .rights{
 
 /*              Viewport less then or equal to 520px            */
 
-@media only screen and (max-width: 520px){
+@media only screen and (max-width: 619px){
+    .footer{
+        flex-direction: column;
+    }
+    .about-us{
+        display: block;
+        width:100%;
+    }
     main .blog{
         height: 125vh;
     }
@@ -300,7 +342,17 @@ footer.footer .rights{
     nav .toggle-collapse{
         width: 80% !important;
     }
-
+    .list-post-latest {
+        display:block;
+    }
+    .list-post-latest .list-post-latest-sub1 .list-post{
+        height: 230px;
+        width:180px;
+    }
+    .list-post-latest .list-post-latest-sub2 .list-post{
+        height: 230px;
+        width:180px;
+    }
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
