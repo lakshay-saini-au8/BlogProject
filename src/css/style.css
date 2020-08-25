@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: black;
+    height: 100%;
+}
+
+main .site-title h1, h3{
+    margin: .3rem;
+}
+
+
+.nav-itemsul {
+    list-style: none;
+    display: flex;  
+}
+
+.nav-link {
+    display: flex;
+    padding: 1.6rem 0.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    background-color: #141414;
+    transition: 0.5s;
+}
+
+.nav-menu {
+    display: flex;
+    background-color: #fff;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.nav .nav-items {
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    text-justify: space-around;
+}
+
+.nav .nav-items a {
+    display: flex;
+    align-items: baseline;
+    color: black;
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: white;
+    transition: 0.1s;
+}
+.nav .nav-brand a {
+    color: black;
+}
+
+.nav-brand {
+    display: flex;
+    flex-grow: 10;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.0rem;
+}
+
+.center-text {
+    height: 565px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    font-size: 160%;
+    text-shadow: 2px 2px black;
+}
+
+main .site-title .site-background{
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(back1.jpg);
+}
+
+
+.explorebtn {
+    color: white;
+    display: block;
+    background-color: black;
+    padding: 10px;
+    margin: 15px auto;
+    font-size: 1rem;
+    width: 10%;
+    border-radius: 2rem;
+    border: 1px solid black;
+    
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: #141414;
+    color: #fff;
+}
+
+main .site-title .explorebtn:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/*********************Container section /**************************************/
+
+.container-main {
+    display: flex;
+    width: auto;
+}
+
+.heading-latest-post {
+    margin: 3% 3%;
+    display: block;
+}
+
+.heading-popular-post {
+    margin: 7% 9%;
+    display: block;
+}
+
+.latest-posts .list-post-latest {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 4.5%;
+}
+.latest-posts .list-post-latest .list-post img {
+    width: 230px;
+}
+.latest-posts .list-post-latest .list-post {
+    padding: 0px;
+    margin: 0px;
+}
+
+.latest-posts .list-post-latest .list-post {
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: black;
+    border-radius: 15px;
+    background-color: #ffffff;
+    /*box-shadow: 0 0 4em -1em black;*/
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #e2e2e2;
+    transition: all, 0.5s;
+    height: 290px;
+    width: 220px;
+    letter-spacing: 0.3px;
+    line-height: 23px;
+}
+.latest-posts .list-post-latest .list-post h3,.latest-posts .list-post-latest .list-post p {
+    padding: 3%;
+    margin: 1px;
+}
+
+.latest-posts .list-post-latest .list-post:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+
+.latest-posts {
+    width: 70%;
+    padding-right: 1%;
+    background-color: #f7f3ef;
+}
+
+.see-all-latest-posts a h3{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 53px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 7px 25px;
+    color: white;
+    border: solid 2px black;
+}
+.see-all-latest-posts a h3:hover{
+    background: transparent;
+    border: solid 2px black;
+    color: black;
+}
+
+.popular-posts {
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    background-color: #f0ebe7;
+    
+}
+
+.list-post-popular {
+    width: 70%;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 23px;
+    margin-left: 10%;
+    background-color: antiquewhite;
+    padding: 4%;
+    margin-bottom: 4%;
+    border-radius: 15px;
+    background-color: #c64545;
+    color: white;
+    text-shadow: 2px 2px black;
+    border: 5px solid #e2e2e2;
+    
+}
+
+.list-post-popular:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+
+/********************************Footer Section *************************************/
+
+
+footer.footer{
+    height: 100%;
+    background: #191919;
+    position: relative;
+}
+
+footer.footer .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: 20px;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer.footer .container p{
+    color: #a0a0a0;
+    line-height: 23px
+}
+
+footer.footer .newsletter .form-element{
+    background: #000;
+    display: flex;;
+}
+
+#down-subscribe {
+    color: white;
+    margin-top: 12%;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: 'Lato';
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: black;
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+.next {
+    color: white;
+}
+
+footer.footer .follow div i{
+    color: white;;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1%;
+    font-family: 'Lato', sans-serif;
+}
+.social-links {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 5%;
+}
+.social-links ion-icon {
+    margin: 10px;
+}
+
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 800px) {
+    .latest-posts {
+        width: 60%;
+        
+    }
+    .popular-posts {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .latest-posts .list-post-latest .list-post {
+        height: 230px;
+        width: 200px;
+    }
+    
+
+}
+@media only screen and (max-width: 575px) {
+    .container-main {
+        flex-flow: row wrap;
+    }
+    .latest-posts {
+        width: 100%;
+        
+    }
+    .popular-posts {
+        width: 100%;
+    }
+    .latest-posts .list-post-latest .list-post {
+        height: 250px;
+        width: 250px;
+    }
+    .center-text a{
+        font-size: 13px;
+        padding: 12px
+    }
+}
+@media only screen and (max-width: 415px) {
+    .latest-posts .list-post-latest .list-post {
+        height: 220px;
+        width: 200px;
+    }
+    .nav-link a {
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .explorebtn {
+        width: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+#copyrighttext {
+    color: white;
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+    main .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+}
+
+/*        x      Viewport less then or equal to 520px       x     */
+
+
+

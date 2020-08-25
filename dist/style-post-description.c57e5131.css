@@ -1,0 +1,371 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: black;
+}
+.date {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.add-to-fav {
+    margin-top: 35px;
+    margin-left: 81.3%;
+    margin-right: 3.2rem;
+    width: 182px;    
+    display: flex;
+    border: solid 2px black;
+    border-radius: 50px;
+}
+.add-to-fav:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+.add-to-fav-text {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+    vertical-align: middle;
+    margin: auto;
+    width: 100%;
+}
+.add-to-fav-text:hover {
+    color: white;
+}
+.add-to-fav-text:hover .heart-icon {
+    color: white
+}
+.heart-icon {
+    color: black;
+    font-size: 20px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.title {
+    text-align: center;
+    font-size: 28px
+}
+.date {
+    font-size: 17px;
+    margin-top: 1%;
+    color: grey;
+}
+.author {
+    display: flex;
+    justify-items: center;
+}
+.author-image {
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;   
+}
+.author-name {
+    display: inline-block;
+    margin: auto 0 auto 1%;
+}
+
+.content {
+    line-height: 150%;
+    margin-top: 3%;
+}
+
+.content p {
+    margin-top: 3%;   
+}
+.comment-sec {
+    background-color: #f4f4f4;
+    margin-top: 4%;
+}
+
+.comment-section {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.comment {
+    margin: 2% 5%;
+}
+.comment-heading {
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.mail {
+    color: grey;
+}
+.comment-text {
+    margin-top: 2%;
+}
+
+
+
+
+
+/********************************Footer Section *************************************/
+
+
+footer.footer{
+    background: #191919;
+    position: relative;
+}
+
+footer.footer .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: 20px;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer.footer .container p{
+    color: #a0a0a0;
+    line-height: 23px
+}
+
+footer.footer .newsletter .form-element{
+    background: #000;
+    display: flex;
+}
+
+#down-subscribe {
+    color: white;
+    margin-top: 12%;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: 'Lato';
+    font-size: 1rem;
+    width: 100%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: black;
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+.next {
+    color: white;
+}
+
+footer.footer .follow div i{
+    color: white;;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1%;
+    font-family: 'Lato', sans-serif;
+}
+.social-links {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 5%;
+}
+.social-links ion-icon {
+    margin: 10px;
+}
+
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1010px){
+    .add-to-fav {
+        margin-left: 8%;
+        width: 150px;
+        
+    }
+    .add-to-fav p{
+        font-size: 90%;
+    }
+    .add-to-fav ion-icon{
+        font-size: 90%;
+        margin-top: 2px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .title {
+    text-align: center;
+    font-size: 20px;
+}
+    .date {
+    font-size: 14px;
+    margin-top: 1%;
+    color: grey;
+    }
+ 
+    .author-image {
+        height: 50px;
+        width: 65px;
+        border-radius: 50%;   
+    }
+    .author-name {
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 540px){
+    .title {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+}
+    .date {
+    font-size: 12px;
+    margin-top: 1%;
+    color: grey;
+    }
+ 
+    .author-image {
+        height: 50px;
+        width: 65px;
+        border-radius: 50%;  
+    }
+    .author-name {
+        font-size: 90%;
+    }
+    .author{
+        margin-top: 30px;
+    }
+    .add-to-fav {
+        margin-left: 5%;
+        width: 120px;
+        padding: 3px;
+        
+    }
+    .add-to-fav p{
+        font-size: 80%;
+    }
+    .add-to-fav ion-icon{
+        font-size: 80%;
+        margin-top: 2px;
+    }
+}
+
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+#copyrighttext {
+    color: white;
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+    main .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+}
+
+/*        x      Viewport less then or equal to 520px       x     */
+
+
+
+
+
+/*# sourceMappingURL=/style-post-description.c57e5131.css.map */
